@@ -11,9 +11,9 @@ const Index = () => {
       </Head>
 
       <div className={styles.container}>
-        {/* Hint: Create a component for profiles */}
+        {/* Hint: Create a component for profile */}
       </div>
-      
+
     </main>
   )
 }
