@@ -2,6 +2,11 @@ import Head from 'next/head'
 import styles from './index.module.css'
 
 const Index = () => {
+
+  // 1: Your API endpoint to query is /api/profile
+  // 2: Our API endpoint accepts a query parameter => id | string
+  // 3: Get the user with the following ID: 1OuR3CWOEsfISTpFxsG7
+
   return (
     <main>
       <Head>
@@ -10,7 +15,6 @@ const Index = () => {
       </Head>
 
       <div className={styles.container}>
-        {/* 🛠: Your API endpoint to query is /api/profile */}
         {/* 🛠: Create a profile page for the user */}
         {/* 🛠: Additionally, show all of the user's recent posts */}
       </div>
