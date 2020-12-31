@@ -2,7 +2,6 @@ import Head from 'next/head'
 import styles from './index.module.css'
 
 const Index = () => {
-
   return (
     <main>
       <Head>
@@ -11,7 +10,9 @@ const Index = () => {
       </Head>
 
       <div className={styles.container}>
-        {/* Hint: Create a component for profile */}
+        {/* 🛠: Your API endpoint to query is /api/profile */}
+        {/* 🛠: Create a profile page for the user */}
+        {/* 🛠: Additionally, show all of the user's recent posts */}
       </div>
 
     </main>
