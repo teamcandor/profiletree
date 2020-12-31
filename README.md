@@ -1,30 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Candor Interview Project
 
-## Getting Started
+## Starting the project
 
-First, run the development server:
+After you clone the repository, install your dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+`npm i`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the development server:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+`npm run dev`
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) to see your development environment.
 
-To learn more about Next.js, take a look at the following resources:
+## The goal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build a tool that fetches user data from [this endpoint](http://localhost:3000), manipulates, and renders it in React/Next.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- You should be able to render the person's personal information, their recent activity/posts, and a profile picture.
 
-## Deploy on Vercel
+## Stretch goals
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Implement server-side-rendering in NextJS (in lieu of fetching on page-load)
