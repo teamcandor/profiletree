@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to see your development envi
 
 ## The goal
 
-Build a tool that fetches user data from [this endpoint](http://localhost:3000), manipulates, and renders it in React/Next.
+Build a tool that fetches user data from /api/profile/[id], manipulates, and renders it in React/Next.
 
 - You should be able to render the person's personal information, their recent activity/posts, and a profile picture.
 
