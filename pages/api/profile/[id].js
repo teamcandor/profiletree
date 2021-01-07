@@ -1,5 +1,3 @@
-import axios from "axios"
-
 export default async (req, res) => {
 
   const { method } = req
@@ -11,23 +9,29 @@ export default async (req, res) => {
       return
     }
 
+    if (!req.body.isFullProfile) {
+      res.status(500).send("Must query full profile")
+      return
+    }
+
     const person = {
       id: '1OuR3CWOEsfISTpFxsG7',
       name: 'James Bond',
       role: 'Software Engineer',
+      image: 'https://pbs.twimg.com/profile_images/666991518121508864/sLu9f6s7_400x400.jpg',
       company: 'Facebook',
       posts: [
         {
           title: 'How to Write a Software Engineer Cover Letter',
-          image: 'https://images.unsplash.com/photo-1461681334529-b7210750c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2552&q=80'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         },
         {
           title: '5 Pre-IPO Companies to Send Your Resume to in 2020',
-          image: 'https://images.unsplash.com/photo-1607041409099-bd92431680a1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         },
         {
           title: 'Becoming an Engineering Manager in Silicon Valley',
-          image: 'https://images.unsplash.com/photo-1609383645129-c777c3a5c7e4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2551&q=80'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         }
       ]
     }
